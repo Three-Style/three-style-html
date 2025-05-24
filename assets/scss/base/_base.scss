@@ -150,6 +150,10 @@ button {
     cursor: pointer;
 }
 
+.img-wrapper{
+    line-height: 0;
+}
+
 img {
     max-width: 100%;
     line-height: 0;
@@ -164,10 +168,6 @@ a:hover {
     cursor: pointer;
 }
 
-::placeholder {
-    color: $placeholder !important;
-    // text-transform: capitalize;
-}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
