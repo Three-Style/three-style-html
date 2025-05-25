@@ -178,6 +178,51 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s !important;
 }
 
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+section {
+  padding: 50px 0px;
+}
+
+.title-box h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .top-bar {
   padding: 10px 0px;
   background-color: #7E1518;
@@ -243,4 +288,36 @@ h1 {
   h1 {
     font-size: 16px;
   }
+}
+
+.banner-wrapper {
+  position: relative;
+  border-radius: 20px;
+}
+.banner-wrapper .carousel-control-prev,
+.banner-wrapper .carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+.banner-wrapper .carousel-control-prev {
+  transform: translateX(-30px);
+}
+.banner-wrapper .carousel-control-next {
+  transform: translateX(30px);
+}
+.banner-wrapper:hover .carousel-control-prev,
+.banner-wrapper:hover .carousel-control-next {
+  opacity: 1;
+  transform: translateX(0);
+}
+.banner-wrapper .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.collection-wrapper .collection-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }/*# sourceMappingURL=app.css.map */
