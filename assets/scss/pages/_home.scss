@@ -15,77 +15,77 @@ h1 {
 }
 
 // banner-wrapper-start
-.banner-wrapper {
-	position: relative;
-	border-radius: 20px;
-
-	.carousel-control-prev,
-	.carousel-control-next {
-		background-color: rgba($white-color, .6);
-		border-radius: 50%;
-		padding: 14px;
-		opacity: 0;
-		transition: opacity 0.3s ease, transform 0.3s ease;
-		z-index: 1;
-		width: 60px;
-		height: 60px;
-		top: 50%;
-		transform: translateY(-50%);
-
-		@media (max-width:1199px) {
-			width: 50px;
-			height: 50px;
-			padding: 12px;
-		}
-
-		@media (max-width:576px) {
-			width: 34px;
-			height: 34px;
-			padding: 8px;
-		}
-	}
-
-	.carousel-control-prev {
-		// transform: translateX(-30px);
-		left: -50%;
-
-		img {
-			transform: rotate(-180deg);
-		}
-	}
-
-	.carousel-control-next {
-		right: -50%;
-		// transform: translateX(30px);
-	}
-
-	&:hover {
-
+.banner-sec{
+	.banner-slider-wrapper {
+		position: relative;
+		border-radius: 20px;
+		overflow-x: hidden;
+	
 		.carousel-control-prev,
 		.carousel-control-next {
-			opacity: 1;
-			// transform: translateX(0);
+			background-color: rgba($white-color, .6);
+			border-radius: 50%;
+			padding: 14px;
+			opacity: 0;
+			transition: opacity 0.3s ease, transform 0.3s ease;
+			z-index: 1;
+			width: 60px;
+			height: 60px;
+			top: 50%;
+			transform: translateY(-50%);
+	
+			@media (max-width:1199px) {
+				width: 50px;
+				height: 50px;
+				padding: 12px;
+			}
+	
+			@media (max-width:576px) {
+				width: 34px;
+				height: 34px;
+				padding: 8px;
+			}
 		}
-
+	
 		.carousel-control-prev {
-			left: 20px;
+			left: -100px;
+	
+			img {
+				transform: rotate(-180deg);
+			}
 		}
-
+	
 		.carousel-control-next {
-			right: 20px;
+			right: -100px;
 		}
-	}
-
-	.carousel-indicators [data-bs-target] {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
+	
+		&:hover {
+	
+			.carousel-control-prev,
+			.carousel-control-next {
+				opacity: 1;
+			}
+	
+			.carousel-control-prev {
+				left: 20px;
+			}
+	
+			.carousel-control-next {
+				right: 20px;
+			}
+		}
+	
+		.carousel-indicators [data-bs-target] {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
 	}
 }
 
 // banner-wrapper-end
 // collection-wrapper-start
-.collection-wrapper {
+.collection-sec {
 	.collection-main {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
