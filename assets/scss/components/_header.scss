@@ -42,7 +42,7 @@
                 p {
                     text-align: center;
                     color: $white-color;
-                    font-size: 18px;
+                    font-size: 16px;
 
                     @media (max-width:1199px) {
                         font-size: 14px;
@@ -59,6 +59,130 @@
 }
 
 header{
-    padding: 100px 0px;
+    padding: 12px 0px;
     text-align: center;
+
+    .main-header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navbar{
+            padding: 0px;
+            .navbar-toggler{
+                padding: 8px;
+                width: 40px;
+                position: relative;
+                // background-color: grey;  
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                &:focus{
+                    border: none;
+                    box-shadow: none;
+                }
+                
+                span{
+                    background-color: $black-color;
+                    height: 2px;
+                    border-radius: 10px;
+
+                    &:nth-child(1){
+                        width: 70%;
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                    }
+                    &:nth-child(3){
+                        width: 50%;
+                    }
+                }
+                
+            }
+        }
+
+        .offcanvas{
+            height: calc(100% - 40px);
+            top: 50%;
+            transform: translateY(-50%);
+            left: -100%;
+            
+            transition: $transition;
+            border-radius: 16px;
+            padding: 20px 30px;
+            
+            &.show{
+                left: 10px;
+            }
+
+            .offcanvas-wrapper{
+                position: relative;
+
+                .btn-close{
+                    position: absolute;
+                    right: 0%;
+                    top: 0%;
+                    &:focus{
+                        box-shadow: unset;
+                    }
+                }
+                .offcanvas-body{
+                    padding: 0;
+                    ul{
+                        padding-top: 30px ;
+                        li{
+                            text-align: start;
+                            padding: 6px 0px;
+                            
+                            a{
+                                transition: $transition;
+                                position: relative;
+                                font-size: 18px;
+                                color: $black-color;
+                                transition: $transition;
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    background-color: $primary-color;
+                                    transition: $transition;
+                                    width: 0%;
+                                    height: 1px;
+                                    border-radius: 20px;
+                                    left: 0;
+                                    bottom: -6px;
+                                }
+                                &:hover{
+                                    color: $primary-color;
+                                    &::before{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .icon-bar{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .logo{
+            margin-left: 70px;
+            max-width: 120px;
+        }
+
+        .icon-bar{
+            button{
+                transition: $transition;
+                &:hover{
+                    filter: brightness(0) saturate(100%) invert(9%) sepia(100%) saturate(3192%) hue-rotate(347deg) brightness(93%) contrast(94%);
+                }
+            }
+        }
+    }
 }
