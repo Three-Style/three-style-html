@@ -9,7 +9,7 @@
 /* =================== FONT-FAMILY =================== */
 body {
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Emerland";
   font-weight: normal;
   position: relative;
   overflow-x: hidden;
@@ -206,6 +206,24 @@ select:-webkit-autofill:focus {
   }
 }
 
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 .section-gap-p {
   padding: 50px 0px;
 }
@@ -228,6 +246,10 @@ select:-webkit-autofill:focus {
 
 .section-gap-mb {
   margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gilroy-Bold";
 }
 
 .title-box h2 {

@@ -1,4 +1,3 @@
-
 .container,
 .container-fluid {
   width: 100%;
@@ -10,19 +9,19 @@
 
 .container {
   @media (min-width: 576px) {
-      max-width: 1920px;
+    max-width: 1920px;
   }
 
   @media (min-width: 768px) {
-       max-width: 1920px;
+    max-width: 1920px;
   }
 
   @media (min-width: 992px) {
-       max-width: 1920px;
+    max-width: 1920px;
   }
 
   @media (min-width: 1200px) {
-      max-width: 1920px;
+    max-width: 1920px;
   }
 
   @media (min-width: 1400px) {
@@ -30,42 +29,76 @@
   }
 }
 
-.section-gap-p{
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-gap-p {
   padding: 50px 0px;
 }
-.section-gap-pt{
-  padding-top: 50px ;
-}
-.section-gap-pb{
-  padding-bottom: 50px ;
+
+.section-gap-pt {
+  padding-top: 50px;
 }
 
-.section-gap-m{
+.section-gap-pb {
+  padding-bottom: 50px;
+}
+
+.section-gap-m {
   margin: 50px 0px;
 }
-.section-gap-mt{
-  margin-top: 50px ;
-}
-.section-gap-mb{
-  margin-bottom: 50px ;
+
+.section-gap-mt {
+  margin-top: 50px;
 }
 
-.title-box h2{
+.section-gap-mb {
+  margin-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{
+      font-family: "Gilroy-Bold";
+}
+.title-box {
+
+  h2 {
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
-    
+
     @media (max-width:1199px) {
       margin-bottom: 36px;
     }
+
     @media (max-width:991px) {
       margin-bottom: 30px;
     }
+
     @media (max-width:767px) {
       font-size: 30px;
     }
+
     @media (max-width:576px) {
       font-size: 24px;
       margin-bottom: 26px;
     }
+  }
 }
