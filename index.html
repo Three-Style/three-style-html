@@ -102,18 +102,16 @@
                 <nav class="navbar">
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        data-bs-target="#offcanvas-menus">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
 
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas offcanvas-start" id="offcanvas-menus">
                         <div class="offcanvas-wrapper">
 
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
                             <div class="offcanvas-body">
                                 <ul>
                                     <li>
@@ -139,7 +137,8 @@
                 </a>
                 <div class="icon-bar">
 
-                    <button class="img-wrapper">
+                    <button class="img-wrapper" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-search">
                         <img src="assets/images/icons/search.svg" alt="">
                     </button>
 
@@ -151,8 +150,46 @@
                         <img src="assets/images/icons/cart.svg" alt="">
                     </button>
 
-                  
                 </div>
+
+                <div class="offcanvas offcanvas-end offcanvas-search" id="offcanvas-search">
+                    <div class="offcanvas-wrapper">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        <div class="offcanvas-body">
+
+                            <h1>search</h1>
+
+
+                            <form method="GET" action="/search">
+                                <div class="form-group">
+                                    <input type="search" class="form-control"
+                                        placeholder="Search" aria-label="Search" required="">
+                                    <button type="submit">
+                                        <img src="assets/images/icons/search-navbar.svg" alt="search">
+                                    </button>
+                                </div>
+                            </form>
+
+                            <ul>
+                                <li>
+                                    <a href="/">Top sarres</a>
+                                </li>
+                                <li>
+                                    <a href="/">All sarres collection</a>
+                                </li>
+                                <li>
+                                    <a href="/">Kurti</a>
+                                </li>
+                                <li>
+                                    <a href="/">Chaniya Choli</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
