@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::after,
 *::before {
@@ -7,9 +8,27 @@
 }
 
 /* =================== FONT-FAMILY =================== */
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   box-sizing: border-box;
-  font-family: "Emerland";
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   position: relative;
   overflow-x: hidden;
@@ -206,24 +225,6 @@ select:-webkit-autofill:focus {
   }
 }
 
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy-Regular";
-  src: url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy-Medium";
-  src: url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 .section-gap-p {
   padding: 50px 0px;
 }
@@ -336,10 +337,7 @@ header .main-header-wrapper {
   align-items: center;
   justify-content: space-between;
 }
-header .main-header-wrapper .navbar {
-  padding: 0px;
-}
-header .main-header-wrapper .navbar .navbar-toggler {
+header .main-header-wrapper .navbar-toggler {
   padding: 8px;
   width: 40px;
   position: relative;
@@ -347,23 +345,26 @@ header .main-header-wrapper .navbar .navbar-toggler {
   flex-direction: column;
   gap: 6px;
 }
-header .main-header-wrapper .navbar .navbar-toggler:focus {
+header .main-header-wrapper .navbar-toggler:focus {
   border: none;
   box-shadow: none;
 }
-header .main-header-wrapper .navbar .navbar-toggler span {
+header .main-header-wrapper .navbar-toggler span {
   background-color: #000000;
   height: 2px;
   border-radius: 10px;
 }
-header .main-header-wrapper .navbar .navbar-toggler span:nth-child(1) {
+header .main-header-wrapper .navbar-toggler span:nth-child(1) {
   width: 70%;
 }
-header .main-header-wrapper .navbar .navbar-toggler span:nth-child(2) {
+header .main-header-wrapper .navbar-toggler span:nth-child(2) {
   width: 100%;
 }
-header .main-header-wrapper .navbar .navbar-toggler span:nth-child(3) {
+header .main-header-wrapper .navbar-toggler span:nth-child(3) {
   width: 50%;
+}
+header .main-header-wrapper .navbar {
+  padding: 0px;
 }
 header .main-header-wrapper .offcanvas {
   height: calc(100% - 40px);
@@ -394,6 +395,11 @@ header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body {
 header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body ul {
   padding-top: 30px;
 }
+header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body ul h6 {
+  font-size: 18px;
+  text-align: start;
+  padding-bottom: 20px;
+}
 header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body ul li {
   text-align: start;
   padding: 6px 0px;
@@ -422,6 +428,12 @@ header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body ul li 
 header .main-header-wrapper .offcanvas .offcanvas-wrapper .offcanvas-body ul li a:hover::before {
   width: 100%;
 }
+header .main-header-wrapper .offcanvas .offcanvas-wrapper .search-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
 header .main-header-wrapper .offcanvas-search {
   right: -100%;
   left: unset;
@@ -446,14 +458,29 @@ header .main-header-wrapper .offcanvas-search .form-group .form-control:focus {
   border: unset;
   box-shadow: unset;
 }
+header .main-header-wrapper .offcanvas-search .form-group button {
+  width: 20px;
+  height: 20px;
+}
 header .main-header-wrapper .icon-bar {
   display: flex;
   align-items: center;
   gap: 24px;
 }
+@media (max-width: 576px) {
+  header .main-header-wrapper .icon-bar {
+    gap: 0px;
+  }
+}
 header .main-header-wrapper .logo {
   margin-left: 120px;
   max-width: 120px;
+}
+@media (max-width: 576px) {
+  header .main-header-wrapper .logo {
+    margin-left: 20px;
+    width: 80px;
+  }
 }
 header .main-header-wrapper .icon-bar button {
   position: relative;
@@ -464,6 +491,20 @@ header .main-header-wrapper .icon-bar button {
   height: 40px;
   transition: 0.4s all ease;
   border-radius: 50%;
+}
+@media (max-width: 576px) {
+  header .main-header-wrapper .icon-bar button {
+    width: 30px;
+    height: 30px;
+  }
+}
+header .main-header-wrapper .icon-bar button.menu-mob {
+  height: auto;
+}
+@media (max-width: 576px) {
+  header .main-header-wrapper .icon-bar button.menu-mob {
+    padding: 4px;
+  }
 }
 header .main-header-wrapper .icon-bar button::before {
   transition: 0.4s all ease;

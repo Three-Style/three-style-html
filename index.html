@@ -99,9 +99,17 @@
     <header>
         <div class="container">
             <div class="main-header-wrapper">
-                <nav class="navbar">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <nav class="navbar">
+                    <div class="icon-bar d-md-none d-flex">
+                        <button class="img-wrapper" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas-search">
+                            <img src="assets/images/icons/search.svg" alt="">
+                        </button>
+                    </div>
+
+
+                    <button class="navbar-toggler d-md-flex d-none" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvas-menus">
                         <span></span>
                         <span></span>
@@ -132,39 +140,28 @@
                         </div>
                     </div>
                 </nav>
+
                 <a href="/" class="img-wrapper logo">
                     <img src="assets/images/logo.avif" alt="">
                 </a>
-                <div class="icon-bar">
 
-                    <button class="img-wrapper" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas-search">
-                        <img src="assets/images/icons/search.svg" alt="">
-                    </button>
-
-                    <button class="img-wrapper">
-                        <img src="assets/images/icons/profile.svg" alt="">
-                    </button>
-
-                    <button class="img-wrapper">
-                        <img src="assets/images/icons/cart.svg" alt="">
-                    </button>
-
-                </div>
 
                 <div class="offcanvas offcanvas-end offcanvas-search" id="offcanvas-search">
                     <div class="offcanvas-wrapper">
 
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        <div class="pb-lg-4 pb-3 d-flex align-items-center justify-content-between">
+                            <span class="search-label">search</span>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+
                         <div class="offcanvas-body">
 
-                            <h1>search</h1>
 
 
                             <form method="GET" action="/search">
                                 <div class="form-group">
                                     <input type="search" class="form-control"
-                                        placeholder="Search" aria-label="Search" required="">
+                                        placeholder="What are you looking for?    " aria-label="Search" required="">
                                     <button type="submit">
                                         <img src="assets/images/icons/search-navbar.svg" alt="search">
                                     </button>
@@ -172,6 +169,7 @@
                             </form>
 
                             <ul>
+                                <h6>Most searched</h6>
                                 <li>
                                     <a href="/">Top sarres</a>
                                 </li>
@@ -188,6 +186,32 @@
 
                         </div>
                     </div>
+                </div>
+
+                <div class="icon-bar">
+
+
+                    <button class="img-wrapper d-md-flex d-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-search">
+                        <img src="assets/images/icons/search.svg" alt="">
+                    </button>
+
+
+                    <button class="img-wrapper">
+                        <img src="assets/images/icons/profile.svg" alt="">
+                    </button>
+
+                    <button class="img-wrapper d-md-flex d-none">
+                        <img src="assets/images/icons/cart.svg" alt="">
+                    </button>
+
+                    <button class="navbar-toggler menu-mob d-md-none d-flex" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-menus">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                 </div>
             </div>
         </div>
@@ -284,7 +308,7 @@
                 </div>
             </div>
         </section>
- <section class="collection-sec section-gap-p">
+        <section class="collection-sec section-gap-p">
             <div class="container">
                 <div class="title-box">
                     <h2>SHOP BY OCCASION</h2>
