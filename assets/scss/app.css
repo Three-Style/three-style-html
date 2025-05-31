@@ -522,6 +522,11 @@ header .main-header-wrapper .logo {
   margin-left: 120px;
   max-width: 120px;
 }
+@media (max-width: 767px) {
+  header .main-header-wrapper .logo {
+    margin-left: 60px;
+  }
+}
 @media (max-width: 576px) {
   header .main-header-wrapper .logo {
     margin-left: 20px;

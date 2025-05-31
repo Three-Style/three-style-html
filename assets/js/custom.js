@@ -26,8 +26,15 @@ $(document).ready(function () {
   $('.navbar-toggler').click(function () {
     if ($(window).width() <= 767) {
       $(this).toggleClass('active');
-      $('.navbar-collapse').toggleClass('show'); 
+      $('.navbar-collapse').toggleClass('show');
+    }
+  });
+
+  $('.user').click(function () {
+    if ($(window).width() <= 767) {
+      $('.navbar-toggler').removeClass('active');
     }
   });
 });
+
 
