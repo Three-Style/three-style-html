@@ -38,3 +38,33 @@ $(document).ready(function () {
 });
 
 
+/* ----- 6.Blur body js ----- */
+$("body").on("click", ".navbar-toggler", function () {
+  if (window.innerWidth <= 991) {
+    $('header').addClass('sticky-menu');
+  }
+});
+
+$("body").on("click", ".navbar-nav a", function () {
+  $('body').removeClass('blur-body');
+  // $('header').removeClass('sticky-menu');
+});
+
+/* ----- 7.menu fixed on scroll ----- */
+$(document).ready(function () {
+  headerFixed();
+});
+$(document).on('scroll', function () {
+  headerFixed();
+});
+function headerFixed() {
+  if ($(window).scrollTop() >= 20) {
+    $('header').addClass('sticky-menu');
+  }
+  else {
+    $('header').removeClass('sticky-menu');
+
+  }
+}
+
+
