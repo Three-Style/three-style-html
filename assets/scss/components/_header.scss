@@ -85,6 +85,7 @@ header {
                 background-color: $black-color;
                 height: 2px;
                 border-radius: 10px;
+                transition: $transition;
 
                 &:nth-child(1) {
                     width: 70%;
@@ -99,11 +100,38 @@ header {
                 }
             }
 
+            @media (max-width:767px) {
+                &.active {
+
+                    span {
+                        &:nth-child(1) {
+                            transform: rotate(45deg) translate(6px, 6px);
+                            width: 100%;
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                            width: 0%;
+                        }
+
+                        &:nth-child(3) {
+                            transform: rotate(-45deg) translate(5px, -5px);
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
 
 
         .navbar {
             padding: 0px;
+
+            .offcanvas-backdrop {
+                @media (max-width:767px) {
+                    display: none;
+                }
+            }
         }
 
         .offcanvas {
@@ -116,8 +144,30 @@ header {
             border-radius: 16px;
             padding: 20px 30px;
 
+            @media (max-width:767px) {
+                width: 100%;
+                height: 100%;
+                border-radius: 0px;
+            }
+
+            &.mob-res-changes {
+
+                @media (max-width:767px) {
+                    transform: translateY(-100%);
+                    top: 100%;
+                    bottom: 0px;
+                    height: calc(100% - 160px);
+                    border-top: 1px solid $primary-color;
+                }
+            }
+
+
             &.show {
                 left: 10px;
+
+                @media (max-width:767px) {
+                    left: 0px;
+                }
             }
 
             .offcanvas-wrapper {
@@ -197,6 +247,10 @@ header {
             &.show {
                 left: unset;
                 right: 10px;
+
+                @media (max-width:767px) {
+                    right: 0px;
+                }
             }
 
             .form-group {
@@ -228,6 +282,7 @@ header {
             display: flex;
             align-items: center;
             gap: 24px;
+
             @media (max-width:576px) {
                 gap: 0px;
             }
@@ -253,13 +308,18 @@ header {
                 height: 40px;
                 transition: $transition;
                 border-radius: 50%;
+
                 @media (max-width:576px) {
                     width: 30px;
                     height: 30px;
                 }
-                &.menu-mob{
+
+                &.menu-mob {
                     height: auto;
-                    @media (max-width:576px) {
+                    align-items: start;
+
+
+                    @media (max-width:767px) {
                         padding: 4px;
                     }
                 }
@@ -276,18 +336,23 @@ header {
                     height: 5px;
                     border-radius: 50%;
                     opacity: 0;
+
                 }
 
-                &:hover {
-                    img {
-                        filter: brightness(100);
+                @media (min-width:768px) {
+                    &:hover {
+    
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+    
+                        &::before {
+                            width: 100%;
+                            height: 100%;
+                            opacity: 1;                       
+                        }
                     }
-
-                    &::before {
-                        width: 100%;
-                        height: 100%;
-                        opacity: 1;
-                    }
+                    
                 }
 
                 img {
