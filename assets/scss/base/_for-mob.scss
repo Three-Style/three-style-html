@@ -1,0 +1,29 @@
+.mobile-bottom-nav-custom {
+    display: none;
+
+    @media (max-width:767px) {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        z-index: 1;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        li {
+            a {
+                img {
+                    padding-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+                    color: $white-color;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

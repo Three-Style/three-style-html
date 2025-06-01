@@ -280,6 +280,31 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.mobile-bottom-nav-custom {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-bottom-nav-custom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: #7E1518;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .mobile-bottom-nav-custom li a img {
+    padding-bottom: 10px;
+  }
+  .mobile-bottom-nav-custom li a span {
+    display: block;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+}
+
 .top-bar {
   padding: 10px 0px;
   background-color: #7E1518;
@@ -689,7 +714,6 @@ h1 {
 }
 @media (max-width: 767px) {
   .collection-sec .collection-main {
-    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -702,14 +726,10 @@ h1 {
 .collection-sec .collection-main .collection-card:hover a .img-wrapper img {
   transform: scale(1.1);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .collection-sec .collection-main .collection-card:nth-child(even) {
-    margin-top: 20px;
+    transform: translateY(40px);
   }
-}
-.collection-sec .collection-main .collection-card a {
-  width: 100%;
-  height: 100%;
 }
 .collection-sec .collection-main .collection-card .img-wrapper {
   width: 100%;
@@ -718,8 +738,29 @@ h1 {
 .collection-sec .collection-main .collection-card .img-wrapper img {
   transition: 0.4s all ease;
   width: 100%;
+  transform: scale(1);
+}
+
+.occasion-sec .occasion-main .occasion-card {
+  transition: 0.4s all ease;
+  border-radius: 16px;
+  overflow: hidden;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.occasion-sec .occasion-main .occasion-card:hover a .img-wrapper img {
+  transform: scale(1.1);
+}
+@media (max-width: 991px) {
+  .occasion-sec .occasion-main .occasion-card:nth-child(even) {
+    transform: translateY(40px);
+  }
+}
+.occasion-sec .occasion-main .occasion-card .img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.occasion-sec .occasion-main .occasion-card .img-wrapper img {
+  transition: 0.4s all ease;
+  width: 100%;
   transform: scale(1);
 }/*# sourceMappingURL=app.css.map */

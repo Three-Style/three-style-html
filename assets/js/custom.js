@@ -37,19 +37,6 @@ $(document).ready(function () {
   });
 });
 
-
-/* ----- 6.Blur body js ----- */
-$("body").on("click", ".navbar-toggler", function () {
-  if (window.innerWidth <= 991) {
-    $('header').addClass('sticky-menu');
-  }
-});
-
-$("body").on("click", ".navbar-nav a", function () {
-  $('body').removeClass('blur-body');
-  // $('header').removeClass('sticky-menu');
-});
-
 /* ----- 7.menu fixed on scroll ----- */
 $(document).ready(function () {
   headerFixed();
@@ -65,6 +52,30 @@ function headerFixed() {
     $('header').removeClass('sticky-menu');
 
   }
+}
+
+
+if ($(".occasion-Product-Swiper").length == "1") {
+    var swiper = new Swiper(".occasion-Product-Swiper", {
+        slidesPerView: 5,
+        spaceBetween: 16,
+        speed: 1000,
+        autoplayDisableOnInteraction: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 5,
+            }
+        }
+    });
 }
 
 
