@@ -96,131 +96,257 @@
         </div>
     </section>
 
+    <!-- HEADER SECTION START -->
     <header>
-        <div class="container">
-            <div class="main-header-wrapper">
+        <div class="main-header-block">
+            <div class="container">
+                <div class="main-header">
 
-                <div class="icon-bar d-md-none d-flex">
-                    <button class="img-wrapper user" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas-search">
-                        <img src="assets/images/icons/search.svg" alt="">
-                    </button>
-                </div>
+                    <div class="d-xl-none">
 
+                        <button class="navbar-toggler collapsed  d-xl-none d-md-block d-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav">
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </button>
 
-                <button class="navbar-toggler d-lg-none d-md-flex d-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvas-menus">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-
-                <a href="/" class="img-wrapper logo">
-                    <img src="assets/images/logo.avif" alt="">
-                </a>
-
-
-                <div class="offcanvas offcanvas-end offcanvas-search" id="offcanvas-search">
-                    <div class="offcanvas-wrapper">
-
-                        <div class="pb-lg-4 pb-3 d-flex align-items-center justify-content-between">
-                            <span class="search-label">search</span>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-                        </div>
-
-                        <div class="offcanvas-body">
-
-
-
-                            <form method="GET" action="/search">
-                                <div class="form-group">
-                                    <input type="search" class="form-control"
-                                        placeholder="What are you looking for?    " aria-label="Search" required="">
-                                    <button type="submit">
-                                        <img src="assets/images/icons/search-navbar.svg" alt="search">
-                                    </button>
-                                </div>
-                            </form>
-
-                            <ul>
-                                <h6>Most searched</h6>
-                                <li>
-                                    <a href="/">Top sarres</a>
-                                </li>
-                                <li>
-                                    <a href="/">All sarres collection</a>
-                                </li>
-                                <li>
-                                    <a href="/">Kurti</a>
-                                </li>
-                                <li>
-                                    <a href="/">Chaniya Choli</a>
-                                </li>
-                            </ul>
-
-                        </div>
+                        <a class="me-1 me-sm-2 me-lg-0 d-md-none d-block">
+                            <img src="assets/images/icons/search.svg" alt="">
+                        </a>
                     </div>
-                </div>
-
-                <div class="icon-bar">
 
 
-                    <button class="img-wrapper d-md-flex d-none no-hover" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas-search">
-                        <img src="assets/images/icons/search.svg" alt="">
-                    </button>
+
+                    <a class="logo img-wrapper d-sm-block" href="index.html">
+                        <img src="assets/images/logo.avif" alt="Logo" />
+                    </a>
 
 
-                    <button class="img-wrapper">
-                        <img src="assets/images/icons/profile.svg" alt="">
-                    </button>
-
-                    <button class="img-wrapper d-md-flex d-none">
-                        <img src="assets/images/icons/cart.svg" alt="">
-                    </button>
-
-                    <button class="navbar-toggler menu-mob d-md-none d-flex" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas-menus">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
-                </div>
-
-
-                <nav class="navbar nav-scroll navbar-expand-lg">
-
-                    <div class="offcanvas offcanvas-start mob-res-changes" id="offcanvas-menus">
-                        <div class="offcanvas-wrapper">
-
-                            <button type="button" class="btn-close text-reset d-lg-none d-md-block d-none"
-                                data-bs-dismiss="offcanvas"></button>
-                            <div class="offcanvas-body">
-                                <ul>
-                                    <li>
-                                        <a href="/">Top sarres</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">All sarres collection</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Kurti</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">Chaniya Choli</a>
-                                    </li>
-                                </ul>
-
+                    <div class="d-flex align-items-center icon-box">
+                        <a class="me-1 me-sm-2 me-lg-0 d-md-block d-none">
+                            <img src="assets/images/icons/search.svg" alt="">
+                        </a>
+                        <div class="dropdown-contact">
+                            <div class="contact-icon header-round">
+                                <img src="assets/images/icons/profile.svg" alt="header">
+                            </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-link" href="sign-in.html">Sign In</a>
+                                <a class="dropdown-link" href="sign-up.html">Sign Up</a>
                             </div>
                         </div>
+                        <a class="cart-icon me-1 me-sm-2 me-lg-0 pe-0" href="javascript:void(0)" id="cart"
+                            data-bs-target="#cartModal" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            <img src="assets/images/icons/cart.svg" alt="">
+                            <span>2</span>
+                        </a>
+                        <button class="navbar-toggler collapsed d-md-none d-block" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav">
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </button>
                     </div>
-                </nav>
-
+                </div>
             </div>
         </div>
+        <div class="container">
+            <nav class="navbar nav-scroll navbar-expand-xl">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                    <div class="offcanvas-header">
+                        <a class="logo img-wrapper" href="index.html">
+                            <img src="assets/images/logo.avif" alt="Logo" />
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-scroll align-items-lg-center justify-content-lg-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-1
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-2
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-3
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-4
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-5
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-6
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                menus-7
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-body">
+                                    <div class="row">
+                                        <div class="dropListed">
+                                            <div class="dropdown-box ps-xl-0">
+
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-1</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-2</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-3</a></li>
+                                                    <li><a class="dropdown-item" href="/">sub-menu-4</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
+    <!-- HEADER SECTION END -->
 
 
 
@@ -355,7 +481,7 @@
                                     <img src="assets/images/product/Category-Kurtis_1.png" alt="Category">
                                 </div>
                             </a>
-                        </div>                      
+                        </div>
                         <!-- Repeat occasion-card blocks as needed -->
                     </div>
 
@@ -365,7 +491,7 @@
         </section>
 
 
-        <ul class="mobile-bottom-nav-custom">
+        <ul class="mobile-bottom-nav-custom d-none">
             <div class="container">
                 <li>
                     <a href="/index.html" class="img-wrapper">

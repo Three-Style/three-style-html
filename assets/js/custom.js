@@ -2,7 +2,7 @@
 /* ===========================
 1.Wow Js
 2.top-bar slider
-3.Toggle cancel cross after 767px
+3.menu fixed on scroll
 =========================== */
 
 
@@ -20,27 +20,7 @@ var swiper = new Swiper(".announcement-main-bar", {
   speed: 800,
 });
 
-/* ----- 3.Toggle cancel cross after 767px ----- */
-
-$(document).ready(function () {
-  $('.navbar-toggler').click(function () {
-    if ($(window).width() <= 767) {
-      $(this).toggleClass('active');
-      $('.navbar-collapse').toggleClass('show');
-    }
-  });
-
-  $('.user').click(function () {
-    if ($(window).width() <= 767) {
-      $('.navbar-toggler').removeClass('active');
-    }
-  });
-});
-
-/* ----- 7.menu fixed on scroll ----- */
-$(document).ready(function () {
-  headerFixed();
-});
+/* ----- 3.menu fixed on scroll ----- */
 $(document).on('scroll', function () {
   headerFixed();
 });
@@ -55,27 +35,30 @@ function headerFixed() {
 }
 
 
+
+// ALL SLIDER JS START FROM HERE
 if ($(".occasion-Product-Swiper").length == "1") {
-    var swiper = new Swiper(".occasion-Product-Swiper", {
+  var swiper = new Swiper(".occasion-Product-Swiper", {
+    slidesPerView: 5,
+    spaceBetween: 16,
+    speed: 1000,
+    autoplayDisableOnInteraction: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerView: 2,
+      },
+      768: {
         slidesPerView: 5,
-        spaceBetween: 16,
-        speed: 1000,
-        autoplayDisableOnInteraction: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 5,
-            }
-        }
-    });
+      }
+    }
+  });
 }
+// ALL SLIDER JS START FROM HERE
 
 
