@@ -378,9 +378,26 @@ header .main-header-block .main-header {
     padding: 15px 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+  header .main-header-block .main-header .search-icon {
+    width: 20px;
+  }
+}
+@media (max-width: 991px) {
   header .main-header-block .main-header .logo img {
     max-width: 130px;
+  }
+}
+@media (max-width: 767px) {
+  header .main-header-block .main-header .logo img {
+    max-width: 120px;
+    margin-left: 70px;
+  }
+}
+@media (max-width: 575px) {
+  header .main-header-block .main-header .logo img {
+    max-width: 80px;
+    margin-left: 40px;
   }
 }
 header .main-header-block .main-header .icon-box .cart-icon {
@@ -413,22 +430,26 @@ header .main-header-block .main-header .icon-box .cart-icon span {
     top: -5px;
   }
 }
+header .main-header-block .main-header .icon-box .search-icon,
 header .main-header-block .main-header .icon-box .contact-icon,
 header .main-header-block .main-header .icon-box .cart-icon {
   line-height: 0;
   padding: 0 10px;
 }
 @media (max-width: 575px) {
+  header .main-header-block .main-header .icon-box .search-icon,
   header .main-header-block .main-header .icon-box .contact-icon,
   header .main-header-block .main-header .icon-box .cart-icon {
     padding: 0 5px;
   }
 }
+header .main-header-block .main-header .icon-box .search-icon::after,
 header .main-header-block .main-header .icon-box .contact-icon::after,
 header .main-header-block .main-header .icon-box .cart-icon::after {
   display: none;
 }
 @media (max-width: 767px) {
+  header .main-header-block .main-header .icon-box .search-icon img,
   header .main-header-block .main-header .icon-box .contact-icon img,
   header .main-header-block .main-header .icon-box .cart-icon img {
     width: 20px;
@@ -593,13 +614,12 @@ header nav .navbar-nav .nav-item .nav-link {
 }
 @media (max-width: 1199px) {
   header nav .navbar-nav .nav-item .nav-link {
-    padding: 0 20px;
+    padding: 10px 10px 10px 50px;
     font-size: 14px;
   }
 }
 @media (max-width: 991px) {
   header nav .navbar-nav .nav-item .nav-link {
-    padding: 10px 10px 10px 50px;
     color: #000000;
     text-align: left;
   }
@@ -676,7 +696,7 @@ header nav .navbar-nav .nav-item .dropdown-menu[data-bs-popper] {
 }
 header nav .navbar-nav .nav-item .dropdown-menu .dropdown-body {
   padding: 20px;
-  border-top: 2px solid #154744;
+  border-top: 2px solid #7E1518;
   box-shadow: 0px 4px 10px rgba(96, 96, 96, 0.16);
   min-height: 320px;
   position: relative;
@@ -688,7 +708,7 @@ header nav .navbar-nav .nav-item .dropdown-menu .dropdown-body::before {
   left: 50%;
   transform: translateX(-50%);
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #154744;
+  border-bottom: 10px solid #7E1518;
   border-left: 10px solid transparent;
 }
 @media (max-width: 991px) {
