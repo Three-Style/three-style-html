@@ -46,6 +46,8 @@ if ($(".occasion-Product-Swiper").length == "1") {
     spaceBetween: 16,
     speed: 1000,
     autoplayDisableOnInteraction: true,
+    centeredSlides: true,
+    loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -53,7 +55,8 @@ if ($(".occasion-Product-Swiper").length == "1") {
     },
     breakpoints: {
       0: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        spaceBetween: 10
       },
       576: {
         slidesPerView: 3
