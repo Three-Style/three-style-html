@@ -38100,14 +38100,15 @@ img {
 .category-card-01 .category-card-info {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     position: absolute;
+    padding-bottom: 20px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(var(--bs-dark-rgb), .3);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 40%);
     transition: ease all .35s;
     opacity: 0
 }
@@ -39333,4 +39334,53 @@ img {
     width: 100%;
     left: 0;
     right: auto
+}
+
+
+/* custom css */
+/* top-headre-marquee */
+.slider {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+/* This creates the infinite scroll */
+.slide-track {
+  width: calc(300px * 10); /* 10 duplicated slides */
+  display: flex;
+  animation: scroll 15s linear infinite;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 300px;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+  cursor: default;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-300px * 5)); /* 5 original slides */
+  }
 }

@@ -540,12 +540,24 @@
       <header class="header-main bg-mode-re header-light fixed-top header-height header-option-9">
          <!-- Header Top -->
          <div class="header-top header-border-bottom small bg-black small offer-slider-main-wrapper">
-            <div class="container-fluid">
                <div class="d-flex justify-content-between align-items-center">
-                  <!-- Left -->
-                  <div class="d-flex align-items-center justify-content-center">
-                     <p class="ht-top-text text-white">Sign Up for 10% off your first order*</p>
+                  <div class="slider">
+                     <div class="slide-track">
+                        <!-- Repeat the same message and duplicate for seamless loop -->
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <!-- duplicate -->
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                        <div class="slide text-white bg-black text-sm">Sign Up for 10% off your first order*</div>
+                     </div>
                   </div>
+
                   <!-- Right -->
                   <!-- <div class="d-flex align-items-center justify-content-center w-lg-auto">
 
@@ -572,7 +584,6 @@
                      </div>
                   </div> -->
                </div>
-            </div>
          </div>
          <!-- End Header Top --><!-- Header Middle -->
          <div class="header-middle">
@@ -584,8 +595,8 @@
                            aria-controls="swim_mobile_popup"><span></span></button></div>
                   </div>
                   <div class="col-lg-4 hm-logo col">
-                     <div class="logo w-100"><a href="../../index.html"><img
-                              class="logo-dark" src="assets/images/logo-v2.svg" title="" alt=""> <img class="logo-light"
+                     <div class="logo w-100"><a href="../../index.html"><img class="logo-dark"
+                              src="assets/images/logo-v2.svg" title="" alt=""> <img class="logo-light"
                               src="assets/images/logo-v2-light.svg" title="" alt=""></a></div>
                   </div>
                   <div class="col-lg-4 hm-right-col">
@@ -1193,28 +1204,68 @@
       <!-- End Mobile Menu --><!-- End Header --><!-- Main -->
       <main>
          <!-- Home Slider -->
-         <div class="parallax" style="background-image: url(assets/images/swimwear-banner-1.jpg);">
-            <div class="container">
-               <div class="row min-vh-75 py-12 align-items-center justify-content-center">
-                  <div class="col-lg-6 text-center">
-                     <h1 class="font-alt display-2 text-white mb-4">Find Your Perfect Micro Bikini</h1>
-                     <p class="text-white lead opacity-8">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     </p>
-                     <div class="pt-3"><a class="btn btn-outline-white" href="#">Let's Shop Now</a></div>
-                  </div>
-               </div>
+        <div class="swiper swiper-container"
+     data-swiper-options='{
+         "slidesPerView": 1,
+         "spaceBetween": 0,
+         "loop": true,
+         "pagination": {
+             "el": ".swiper-pagination",
+             "clickable": true
+         },
+         "navigation": {
+             "nextEl": ".swiper-next-01",
+             "prevEl": ".swiper-prev-01"
+         }
+     }'>
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <div class="bg-no-repeat bg-cover bg-center px-8" style="background-image: url(assets/images/goggles-home-banner-1.jpg);">
+        <div class="container">
+          <div class="row min-vh-75 align-items-center py-12 justify-content-lg-end">
+            <div class="col-lg-6">
+              <h6 class="fw-500 text-primary mb-3 letter-spacing-2 text-white">TRENDING NOW</h6>
+              <h1 class="display-4 fw-600 mb-4 text-white">New Trending<br>Goggles For Women</h1>
+              <div class="h4 fw-400 text-white text-opacity-85">Up To 50% Off Best Selling At $151.00</div>
+              <div class="pt-3"><a class="btn btn-outline-light" href="#">Discover More</a></div>
             </div>
-         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <div class="bg-no-repeat bg-cover bg-center px-8" style="background-image: url(assets/images/goggles-home-banner-2.jpg);">
+        <div class="container">
+          <div class="row min-vh-75 align-items-center py-12">
+            <div class="col-lg-6">
+              <h6 class="fw-500 text-primary mb-3 letter-spacing-2 text-white">TRENDING NOW</h6>
+              <h1 class="display-4 fw-600 mb-4 text-white">New Trending<br>Goggles For Women</h1>
+              <div class="h4 fw-400 text-white text-opacity-85">Up To 50% Off Best Selling At $151.00</div>
+              <div class="pt-3"><a class="btn btn-outline-light" href="#">Discover More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <div class="swiper-arrow-style-01 swiper-next swiper-next-01"><i class="bi bi-chevron-right"></i></div>
+  <div class="swiper-arrow-style-01 swiper-prev swiper-prev-01"><i class="bi bi-chevron-left"></i></div>
+
+  <!-- Pagination Dots -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+</div>
          <!-- End Home Slider --><!-- section -->
          <section class="section pb-0">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-lg-8 text-center">
-                     <h6 class="text-uppercase letter-spacing-3 text-primary mb-3">Our Promise</h6>
-                     <h3 class="m-0 font-alt fw-300 h1">Make room for irresistibly and delicately feminine
-                        styles. From dreamy dresses to ruffled shorts, lacy swimwear and all things pretty
-                        optimistic.
+                     <h6 class="text-uppercase letter-spacing-3 text-primary mb-3">Our Category</h6>
+                     <h3 class="m-0 font-alt fw-300 h1">Shop by Category
                      </h3>
                   </div>
                </div>
@@ -1826,15 +1877,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_aa_1" id="color_aa_2">
                                        <label class="radio-color-label" for="color_aa_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_aa_1" id="color_aa_3">
                                        <label class="radio-color-label" for="color_aa_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_aa_1" id="color_aa_4">
                                        <label class="radio-color-label" for="color_aa_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
@@ -1871,15 +1925,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_bb_1" id="color_bb_2">
                                        <label class="radio-color-label" for="color_bb_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_bb_1" id="color_bb_3">
                                        <label class="radio-color-label" for="color_bb_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_bb_1" id="color_bb_4">
                                        <label class="radio-color-label" for="color_bb_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
@@ -1916,15 +1973,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_cc_1" id="color_cc_2">
                                        <label class="radio-color-label" for="color_cc_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_cc_1" id="color_cc_3">
                                        <label class="radio-color-label" for="color_cc_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_cc_1" id="color_cc_4">
                                        <label class="radio-color-label" for="color_cc_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
@@ -1961,15 +2021,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_dd_1" id="color_dd_2">
                                        <label class="radio-color-label" for="color_dd_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_dd_1" id="color_dd_3">
                                        <label class="radio-color-label" for="color_dd_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_dd_1" id="color_dd_4">
                                        <label class="radio-color-label" for="color_dd_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
@@ -2006,15 +2069,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ee_1" id="color_ee_2">
                                        <label class="radio-color-label" for="color_ee_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ee_1" id="color_ee_3">
                                        <label class="radio-color-label" for="color_ee_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ee_1" id="color_ee_4">
                                        <label class="radio-color-label" for="color_ee_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
@@ -2051,15 +2117,18 @@
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ff_1" id="color_ff_2">
                                        <label class="radio-color-label" for="color_ff_2"><span
-                                             style="background-color: #ffd166;"></span></label></div>
+                                             style="background-color: #ffd166;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ff_1" id="color_ff_3">
                                        <label class="radio-color-label" for="color_ff_3"><span
-                                             style="background-color: #06d6a0;"></span></label></div>
+                                             style="background-color: #06d6a0;"></span></label>
+                                    </div>
                                     <div class="form-check radio-color form-check-inline"><input
                                           class="form-check-input" type="radio" name="color_ff_1" id="color_ff_4">
                                        <label class="radio-color-label" for="color_ff_4"><span
-                                             style="background-color: #073b4c;"></span></label></div>
+                                             style="background-color: #073b4c;"></span></label>
+                                    </div>
                                  </div>
                                  <div class="product-price"><span class="text-primary">$28.<small>50</small></span> <del
                                        class="small text-muted">$38.<small>50</small></del></div>
