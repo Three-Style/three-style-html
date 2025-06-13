@@ -3,7 +3,8 @@
    * Copyright 2011-2024 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap); */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 @font-face {
     font-family: Butler;
@@ -10189,10 +10190,16 @@ button.swiper-pagination-bullet {
     --bs-dark-border-subtle: #6c727f;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
-    --bs-font-sans-serif: "Nunito Sans", sans-serif;
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* --bs-font-sans-serif: "Nunito Sans", sans-serif; */
+    /* --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+    
+    /* IMPLIMENTED FONT FAMILY */
+    --bs-primary-font:"Cinzel", serif;
+    --bs-secondary-font:"Lora", serif; 
+    /* IMPLIMENTED FONT FAMILY */
+
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
+    /* --bs-body-font-family: var(--bs-font-sans-serif); */
     --bs-body-font-size: 0.9rem;
     --bs-body-font-weight: 500;
     --bs-body-line-height: 1.7;
@@ -10344,7 +10351,7 @@ button.swiper-pagination-bullet {
 
 body {
     margin: 0;
-    font-family: var(--bs-body-font-family);
+    font-family: var(--bs--secondary--font);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -10377,10 +10384,10 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--bs-primary-font);
     font-weight: 600;
     line-height: 1.2;
-    color: var(--bs-heading-color)
+    color: var(--bs-heading-color);
 }
 
 .h1,
@@ -10548,7 +10555,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: var(--bs-font-monospace);
+    font-family: var(--bs--secondary--font);
     font-size: 1em
 }
 
@@ -13875,7 +13882,7 @@ textarea.form-control.is-invalid {
     --bs-btn-focus-box-shadow: 0 0 0 0 rgba(var(--bs-btn-focus-shadow-rgb), .5);
     display: inline-block;
     padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-    font-family: var(--bs-btn-font-family);
+    font-family: var(--bs--primary--font);
     font-size: var(--bs-btn-font-size);
     font-weight: var(--bs-btn-font-weight);
     line-height: var(--bs-btn-line-height);
@@ -16796,7 +16803,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-tooltip-zindex);
     display: block;
     margin: var(--bs-tooltip-margin);
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs--secondary--font);
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
@@ -16916,7 +16923,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-popover-zindex);
     display: block;
     max-width: var(--bs-popover-max-width);
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs--primary--font);
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
@@ -20563,9 +20570,9 @@ fieldset:disabled .btn {
     column-gap: 7rem !important
 }
 
-.font-monospace {
+/* .font-monospace {
     font-family: var(--bs-font-monospace) !important
-}
+} */
 
 .fs-1 {
     font-size: calc(1.35rem + 1.2vw) !important
@@ -34348,7 +34355,7 @@ header [data-cart-items]:before {
     justify-content: center;
     border-radius: 50%;
     color: var(--bs-white);
-    font-family: var(--bs-body-font-family)
+    font-family: var(--bs-primary-font);
 }
 
 .mobile-nav-offcanvas {
