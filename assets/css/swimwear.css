@@ -10114,25 +10114,25 @@ button.swiper-pagination-bullet {
     content: "\ea09"
 }
 
-.font-alt {
+/* .font-alt {
     font-family: Butler, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important
-}
+} */
 
 :root,
 [data-bs-theme=light] {
-    --bs-blue: #7678ed;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #ff6f61;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ff9736;
-    --bs-green: #28bb74;
-    --bs-teal: #20c997;
-    --bs-cyan: #3b86ff;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     --bs-white: #fff;
     --bs-gray: #4e5562;
-    --bs-gray-dark: #222934;
+    
     --bs-gray-25: #FCFCFD;
     --bs-gray-50: #f5f7fa;
     --bs-gray-100: #eef1f6;
@@ -10151,7 +10151,7 @@ button.swiper-pagination-bullet {
     --bs-warning: #fc9231;
     --bs-danger: #f03d3d;
     --bs-light: #eef1f6;
-    --bs-white: #fff;
+    
     --bs-black: #000;
     --bs-dark: #02010a;
     --bs-primary-rgb: 185, 111, 74;
@@ -10193,10 +10193,23 @@ button.swiper-pagination-bullet {
     /* --bs-font-sans-serif: "Nunito Sans", sans-serif; */
     /* --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
     
+
+
+    /* MY IMPLIMENTED VARIABLES START */
+
+    
     /* IMPLIMENTED FONT FAMILY */
     --bs-primary-font:"Cinzel", serif;
     --bs-secondary-font:"Lora", serif; 
     /* IMPLIMENTED FONT FAMILY */
+
+    /* IMPLIMENTED FONT FAMILY */
+    --bs-primary-color:red;
+    --bs-secondary-font:yellow; 
+    /* IMPLIMENTED FONT FAMILY */
+
+
+    /* MY IMPLIMENTED VARIABLES END */
 
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     /* --bs-body-font-family: var(--bs-font-sans-serif); */
@@ -10250,61 +10263,7 @@ button.swiper-pagination-bullet {
     --bs-form-invalid-border-color: #f03d3d
 }
 
-/* [data-bs-theme=dark] {
-    color-scheme: dark;
-    --bs-body-color: #999999;
-    --bs-body-color-rgb: 153, 153, 153;
-    --bs-body-bg: #121519;
-    --bs-body-bg-rgb: 18, 21, 25;
-    --bs-emphasis-color: #eef1f6;
-    --bs-emphasis-color-rgb: 238, 241, 246;
-    --bs-secondary-color: rgba(153, 153, 153, 0.75);
-    --bs-secondary-color-rgb: 153, 153, 153;
-    --bs-secondary-bg: #222934;
-    --bs-secondary-bg-rgb: 34, 41, 52;
-    --bs-tertiary-color: rgba(153, 153, 153, 0.5);
-    --bs-tertiary-color-rgb: 153, 153, 153;
-    --bs-tertiary-bg: #1d232d;
-    --bs-tertiary-bg-rgb: 29, 35, 45;
-    --bs-primary-text-emphasis: #d5a992;
-    --bs-secondary-text-emphasis: #9599a1;
-    --bs-success-text-emphasis: #85d1a6;
-    --bs-info-text-emphasis: #82a8e6;
-    --bs-warning-text-emphasis: #fdbe83;
-    --bs-danger-text-emphasis: #f68b8b;
-    --bs-light-text-emphasis: #eef1f6;
-    --bs-dark-text-emphasis: #cad0d9;
-    --bs-primary-bg-subtle: #25160f;
-    --bs-secondary-bg-subtle: #181d25;
-    --bs-success-bg-subtle: #082517;
-    --bs-info-bg-subtle: #0c1b33;
-    --bs-warning-bg-subtle: #331e0b;
-    --bs-danger-bg-subtle: #331613;
-    --bs-light-bg-subtle: #222934;
-    --bs-dark-bg-subtle: #11151a;
-    --bs-primary-border-subtle: #6f432c;
-    --bs-secondary-border-subtle: #333d4c;
-    --bs-success-border-subtle: #187046;
-    --bs-info-border-subtle: #183666;
-    --bs-warning-border-subtle: #663c16;
-    --bs-danger-border-subtle: #99433a;
-    --bs-light-border-subtle: #333d4c;
-    --bs-dark-border-subtle: #222934;
-    --bs-heading-color: #fff;
-    --bs-link-color: #d5a992;
-    --bs-link-hover-color: #e3c5b7;
-    --bs-link-color-rgb: 213, 169, 146;
-    --bs-link-hover-color-rgb: 227, 197, 183;
-    --bs-code-color: #e685b5;
-    --bs-highlight-color: #999999;
-    --bs-highlight-bg: #663c16;
-    --bs-border-color: var(--bs-gray-300);
-    --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
-    --bs-form-valid-color: #7ed6ac;
-    --bs-form-valid-border-color: #7ed6ac;
-    --bs-form-invalid-color: #ffa9a0;
-    --bs-form-invalid-border-color: #ffa9a0
-} */
+
 
 :root,
 [data-bs-theme=light] {
@@ -10316,26 +10275,7 @@ button.swiper-pagination-bullet {
     --bs-text-mode-re: var(--bs-white);
     --bs-bg-mode-re: var(--bs-white)
 }
-/* 
-[data-bs-theme=dark] {
-    --bs-gray-100: rgba(255, 255, 255, 0.025);
-    --bs-gray-200: rgba(255, 255, 255, 0.05);
-    --bs-gray-300: rgba(255, 255, 255, 0.13);
-    --bs-gray-400: rgba(255, 255, 255, 0.25);
-    --bs-gray-500: rgba(255, 255, 255, 0.4);
-    --bs-gray-600: rgba(255, 255, 255, 0.5);
-    --bs-gray-700: rgba(255, 255, 255, 0.7);
-    --bs-gray-800: rgba(255, 255, 255, 0.9);
-    --bs-gray-900: #fff;
-    --bs-avatar-border: #02010a;
-    --bs-footer-link-color: rgba(var(--bs-white-rgb), 0.75);
-    --bs-footer-link-color-hover: var(--bs-white);
-    --bs-text-mode: var(--bs-white);
-    --bs-bg-mode: var(--bs-white);
-    --bs-text-mode-re: var(--bs-dark);
-    --bs-bg-mode-re: var(--bs-black);
-    --bs-backdrop-opacity: 0.8
-} */
+
 
 *,
 ::after,
@@ -10351,7 +10291,7 @@ button.swiper-pagination-bullet {
 
 body {
     margin: 0;
-    font-family: var(--bs--secondary--font);
+    font-family: var(--bs-secondary-font);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -10555,7 +10495,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: var(--bs--secondary--font);
+    font-family: var(--bs-secondary-font);
     font-size: 1em
 }
 
@@ -16803,7 +16743,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-tooltip-zindex);
     display: block;
     margin: var(--bs-tooltip-margin);
-    font-family: var(--bs--secondary--font);
+    font-family: var(--bs-secondary-font);
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
