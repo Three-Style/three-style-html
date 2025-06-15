@@ -186,11 +186,16 @@
                      <!--Footer -->
                      <div class="d-flex align-items-center">
                         <!-- Select -->
-                        <select class="form-select form-select-sm w-auto">
+                        <!-- <select class="form-select form-select-sm w-auto">
                            <option value="1">1</option>
                            <option value="1">2</option>
                            <option value="1">3</option>
-                        </select>
+                        </select> -->
+                        <div class="cart-qty">
+                           <div class="dec qty-btn">-</div><input class="cart-qty-input form-control" type="text"
+                              name="qtybutton" value="1">
+                           <div class="inc qty-btn">+</div>
+                        </div>
                         <!-- Remove --> <a class="small text-mode ms-auto" href="#!"><i class="bi bi-x"></i> Remove</a>
                      </div>
                   </div>
@@ -209,11 +214,16 @@
                      <!--Footer -->
                      <div class="d-flex align-items-center">
                         <!-- Select -->
-                        <select class="form-select form-select-sm w-auto">
+                        <!-- <select class="form-select form-select-sm w-auto">
                            <option value="1">1</option>
                            <option value="1">2</option>
                            <option value="1">3</option>
-                        </select>
+                        </select> -->
+                         <div class="cart-qty">
+                           <div class="dec qty-btn">-</div><input class="cart-qty-input form-control" type="text"
+                              name="qtybutton" value="1">
+                           <div class="inc qty-btn">+</div>
+                        </div>
                         <!-- Remove --> <a class="small text-mode ms-auto" href="#!"><i class="bi bi-x"></i> Remove</a>
                      </div>
                   </div>
@@ -1274,7 +1284,7 @@
          </section>
          <!-- End section --><!-- section -->
          <section class="section overflow-hidden">
-            <div class="container">
+            <div class="container-fluid">
                <div class="swiper-hover-arrow position-relative">
                   <div class="swiper swiper-container swiper-no-scroll" data-swiper-options='{
                         "slidesPerView": 2,
@@ -1295,7 +1305,7 @@
                         "slidesPerView": 3
                         },
                         "1300": {
-                        "slidesPerView": 4
+                        "slidesPerView": 5
                         }
                         }
                         }'>
@@ -1365,52 +1375,16 @@
                               </div>
                            </div>
                         </div>
-                        <!-- End category --><!-- category -->
-                        <div class="swiper-slide">
-                           <div class="category-card-01">
-                              <div class="category-card-img"><a href="#"><img src="assets/images/swimwear-cat-6.jpg"
-                                       title="" alt=""></a></div>
-                              <div class="category-card-info">
-                                 <div class="small letter-spacing-2 mb-1 text-white">WOMEN"S</div>
-                                 <h5 class="font-alt h4"><a class="link-effect-02 text-white" href="#">Tees &
-                                       Tanks</a>
-                                 </h5>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- End category --><!-- category -->
-                        <div class="swiper-slide">
-                           <div class="category-card-01">
-                              <div class="category-card-img"><a href="#"><img src="assets/images/swimwear-cat-7.jpg"
-                                       title="" alt=""></a></div>
-                              <div class="category-card-info">
-                                 <div class="small letter-spacing-2 mb-1 text-white">WOMEN"S</div>
-                                 <h5 class="font-alt h4"><a class="link-effect-02 text-white" href="#">Tees &
-                                       Tanks</a>
-                                 </h5>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- End category --><!-- category -->
-                        <div class="swiper-slide">
-                           <div class="category-card-01">
-                              <div class="category-card-img"><a href="#"><img src="assets/images/swimwear-cat-8.jpg"
-                                       title="" alt=""></a></div>
-                              <div class="category-card-info">
-                                 <div class="small letter-spacing-2 mb-1 text-white">WOMEN"S</div>
-                                 <h5 class="font-alt h4"><a class="link-effect-02 text-white" href="#">Tees &
-                                       Tanks</a>
-                                 </h5>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- End category -->
+
+
                      </div>
                      <div class="swiper-pagination mt-4 position-relative"></div>
                   </div>
-                  <div class="swiper-arrow-style-01 swiper-next swiper-next-02"><i class="bi bi-chevron-right"></i>
+                  <div class="swiper-arrow-style-01 swiper-next swiper-next-02 d-xl-none"><i
+                        class="bi bi-chevron-right"></i>
                   </div>
-                  <div class="swiper-arrow-style-01 swiper-prev swiper-prev-02"><i class="bi bi-chevron-left"></i>
+                  <div class="swiper-arrow-style-01 swiper-prev swiper-prev-02 d-xl-none"><i
+                        class="bi bi-chevron-left"></i>
                   </div>
                </div>
             </div>
@@ -1598,7 +1572,7 @@
                </div>
 
                <div class="text-center mt-lg-4 mt-3">
-                  <a class="btn btn-outline-primary mx-auto" href="#">More</a>
+                  <a class="btn btn-outline-primary mx-auto" href="#">View all</a>
                </div>
 
             </div>
@@ -1623,11 +1597,11 @@
          </section>
          <!-- End section --><!-- section -->
          <section class="section overflow-hidden">
-            <div class="container">
+            <div class="container-fluid">
                <div class="row justify-content-center section-heading">
                   <div class="col-lg-6 text-center">
                      <div class="fs-6 text-uppercase letter-spacing-3 text-primary mb-2">SHOP BY OCCASION</div>
-                     <h3 class="h1 font-alt m-0">Best sale of The Month</h3>
+                     <h3 class="h1 font-alt m-0">New Collection</h3>
                   </div>
                </div>
                <div class="swiper-hover-arrow position-relative">
@@ -1650,7 +1624,7 @@
                         "slidesPerView": 3
                         },
                         "1300": {
-                        "slidesPerView": 4
+                        "slidesPerView": 5
                         }
                         }
                         }'>
@@ -1960,7 +1934,7 @@
          </section> -->
          <!-- End section --><!-- section -->
 
-           <!-- End section --><!-- section -->
+         <!-- End section --><!-- section -->
          <section class="section">
             <div class="container">
                <div class="row justify-content-center section-heading">
@@ -2143,7 +2117,7 @@
                </div>
 
                <div class="text-center mt-lg-4 mt-3">
-                  <a class="btn btn-outline-primary mx-auto" href="#">More</a>
+                  <a class="btn btn-outline-primary mx-auto" href="#">View all</a>
                </div>
 
             </div>
