@@ -10200,13 +10200,13 @@ button.swiper-pagination-bullet {
 
 
     /* IMPLIMENTED FONT FAMILY */
-    --bs-primary-color-font: "Cinzel", serif;
-    --bs-secondary-color-font: "Lora", serif;
+    --bs-primary-font: "Cinzel", serif;
+    --bs-secondary-font: "Lora", serif;
     /* IMPLIMENTED FONT FAMILY */
 
     /* IMPLIMENTED FONT FAMILY */
-    --bs-primary-color-color: #800000;
-    --bs-secondary-color-color: #b96f4a;
+    --bs-primary-color: #800000;
+    --bs-secondary-color: #b96f4a;
     /* IMPLIMENTED FONT FAMILY */
 
 
@@ -37682,7 +37682,7 @@ img {
     justify-content: center;
     font-size: 10px;
     text-transform: uppercase;
-    background: var(--bs-danger);
+    background: var(--bs-primary-color);
     color: var(--bs-white);
     z-index: 1;
     border-radius: 50%
