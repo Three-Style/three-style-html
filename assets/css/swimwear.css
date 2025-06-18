@@ -4,7 +4,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 /* @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap); */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
     font-family: Butler;
@@ -10145,8 +10145,8 @@ button.swiper-pagination-bullet {
     --bs-gray-700: #333d4c;
     --bs-gray-800: #222934;
     --bs-gray-900: #181d25; */
-    
-    
+
+
     /* --bs-success: #33b36b;
     --bs-info: #2f6ed5;
     --bs-warning: #fc9231;
@@ -10200,8 +10200,8 @@ button.swiper-pagination-bullet {
 
 
     /* IMPLIMENTED FONT FAMILY */
-    --bs-primary-font: "Cinzel", serif;
-    --bs-secondary-font: "Lora", serif;
+    --bs-primary-font: "Poppins", serif;
+    /* --bs-secondary-font: "Roboto", serif; */
     /* IMPLIMENTED FONT FAMILY */
 
     /* IMPLIMENTED FONT FAMILY */
@@ -10223,8 +10223,8 @@ button.swiper-pagination-bullet {
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0, 0, 0;
-    
-    
+
+
     --bs-secondary-color-bg: #e0e5eb;
     --bs-secondary-color-bg-rgb: 224, 229, 235;
     --bs-tertiary-color: rgba(97, 97, 116, 0.5);
@@ -10292,7 +10292,7 @@ button.swiper-pagination-bullet {
 
 body {
     margin: 0;
-    font-family: var(--bs-secondary-color-font);
+  font-family: var(--bs-primary-font);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -10496,7 +10496,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: var(--bs-secondary-color-font);
+   font-family: var(--bs-primary-font);
     font-size: 1em
 }
 
@@ -14623,7 +14623,8 @@ fieldset:disabled .btn {
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
+    font-family: var(--bs-primary-font);
 }
 
 .dropdown-item:focus,
@@ -16744,7 +16745,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-tooltip-zindex);
     display: block;
     margin: var(--bs-tooltip-margin);
-    font-family: var(--bs-secondary-color-font);
+   font-family: var(--bs-primary-font);
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
@@ -33291,7 +33292,8 @@ header [data-cart-items]:before {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-    position: relative
+    position: relative;
+    font-family: var(--bs-primary-font);
 }
 
 .header-option-9 .navbar .navbar-nav>.nav-item>.nav-link:before {
@@ -35402,7 +35404,8 @@ article blockquote+h5 {
     font-size: 18px;
     color: var(--bs-body-color);
     font-weight: 600;
-    position: relative
+    position: relative;
+    font-family: var(--bs-primary-font);
 }
 
 .link-list-style-01 li a:after {
@@ -35428,7 +35431,8 @@ article blockquote+h5 {
 }
 
 .link-list-style-02 li+li {
-    padding-top: 3px
+    padding-top: 3px;
+    font-family: var(--bs-primary-font);
 }
 
 .link-list-style-02 li a {
@@ -35440,7 +35444,8 @@ article blockquote+h5 {
     background-size: 0 1px;
     background-position: 0 95%;
     background-repeat: no-repeat;
-    transition: ease all .35s
+    transition: ease all .35s;
+    font-family: var(--bs-primary-font);
 }
 
 .link-list-style-02 li a:hover {
@@ -36458,7 +36463,8 @@ article blockquote+h5 {
     font-size: 12px;
     text-transform: uppercase;
     opacity: .7;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    font-family: var(--bs-primary-font);
 }
 
 .sm-title-04 {
@@ -39157,6 +39163,7 @@ img {
     display: grid;
     place-items: center;
     overflow: hidden;
+    font-family: var(--bs-primary-font);
 }
 
 
@@ -39204,4 +39211,11 @@ img {
         transform: translateX(calc(-300px * 5));
         /* 5 original slides */
     }
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: url('data:image/svg+xml;utf8,<svg fill="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12"/></svg>') no-repeat center;
+  background-size: 12px 12px;
 }
