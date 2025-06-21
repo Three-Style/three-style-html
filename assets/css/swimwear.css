@@ -37681,10 +37681,10 @@ img {
 
 .product-card-9 .badge-ribbon {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 45px;
-    height: 45px;
+    top: 15px;
+    left: 15px;
+    width: 75px;
+    height: 27px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -37693,16 +37693,18 @@ img {
     background: var(--bs-primary-color);
     color: var(--bs-white);
     z-index: 1;
-    border-radius: 50%
+    border-radius: 8px;
 }
 
 .product-card-9 .badge-ribbon span {
     font-size: 12px;
+    line-height: 1px;
 }
 
 .product-card-9 .product-media {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .product-card-9 .product-media img {
