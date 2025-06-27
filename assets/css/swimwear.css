@@ -37739,7 +37739,8 @@ img {
 .product-card-9 .product-media img {
     transition: ease all .35s;
     transform: scale(1);
-    opacity: 1
+    opacity: 1;
+    width:100%;
 }
 
 .product-card-9 .product-media .product-media-hover {
